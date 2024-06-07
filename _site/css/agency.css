@@ -177,7 +177,7 @@ header.masthead::before {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/faces.jpg");
+  background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -643,7 +643,7 @@ header.faces-mask {
   position: relative;  
   width: 100%;  /* 根据需要调整宽度 */
   height: 100%;  /* 根据需要调整高度 */
-  background-image: url('../img/faces.jpg');  /* 设置背景图片 */
+  background-image: url('../img/background.jpg');  /* 设置背景图片 */
   background-size: cover;  /* 使背景图片完全覆盖容器 */
   background-repeat: no-repeat;  /* 避免背景图片重复 */
 }
