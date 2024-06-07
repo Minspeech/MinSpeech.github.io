@@ -37,7 +37,7 @@
         <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-	  <a class="navbar-brand js-scroll-trigger" href="#page-top">VoxBlink</a>
+	  <a class="navbar-brand js-scroll-trigger" href="#page-top">MinSpeech</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -164,7 +164,7 @@
             <div class="modal-body">
               <!-- Project Details Go Here -->
               <h2 class="text-uppercase">Gender</h2>
-              <p class="item-intro text-muted">Top:&nbsp;VoxBlink;&nbsp;Bottom:&nbsp;VoxBlink-clean.<br>The gender labels are obtained from a binary classifier by the users' multi-modal information.</p>
+              <p class="item-intro text-muted">Top:&nbsp;MinSpeech;&nbsp;Bottom:&nbsp.<br>The gender labels are obtained from a binary classifier by the users' multi-modal information.</p>
               <img
                 class="img-fluid d-block mx-auto"
                 src="./assets/img/portfolio/gender_modal.jpg"
@@ -172,7 +172,7 @@
               />
               <p>
 
-<!-- <p class="item-intro">The majority of speakers within the VoxBlink dataset are <b>female</b> (39% vs 61%), <br>and its cleaned version is relatively <b>gender-balanced</b>(44% vs 56%).</p> -->
+<!-- <p class="item-intro">The majority of speakers within the MinSpeech dataset are <b>female</b> (39% vs 61%), <br>and its cleaned version is relatively <b>gender-balanced</b>(44% vs 56%).</p> -->
 
 
 </p>
@@ -353,7 +353,7 @@
             <div class="modal-body">
               <!-- Project Details Go Here -->
               <h2 class="text-uppercase">Duration</h2>
-              <p class="item-intro text-muted">The Duration distribution of the VoxBlink.</p>
+              <p class="item-intro text-muted">The Duration distribution of the MinSpeech.</p>
               <img
                 class="img-fluid d-block mx-auto"
                 src="./assets/img/portfolio/duration.png"
@@ -527,8 +527,8 @@
               <!-- Project Details Go Here -->
               
               <span >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this paper, we introduce a novel and extensive audio-visual speaker verification dataset named <strong>VoxBlink</strong>. We propose an innovative and robust automatic audio-visual collection pipeline designed to curate this dataset. Finally, there are total 38k identities with 1.45M utterances are collected. Due to the inherent nature of automated data collection, the introduction of noisy data is inevitable. Therefore, we also provide a clean version of VoxBlink, named as VoxBlink-clean, comprising 18k identities and 1.02M utterances. In contrast to VoxCeleb, VoxBlink contains from YouTube ordinary person channels, that means the dataset scenarios covered are more in line with real-life situations. To our best knowledge, the VoxBlink dataset is one of the largest open speaker recognition datasets. Leveraging the VoxCeleb and VoxBlink dataset, we employ diverse speaker verification models with multiple architectural backbones to conduct comprehensive experimentation on the VoxCeleb test sets. Experimential results indicates that a substantial enhancement in performance—ranging from 12% to 30%—across various backbone architectures upon the incorporation of VoxBlink into the training process.
-              </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paper presents <strong>MinSpeech</strong>, a speech corpus of Southern Min (also known as Hokkien), to propel research in dialect speech recognition. Despite the linguistic and cultural importance of Southern Min, there is still a notable scarcity of publicly accessible speech corpus for this dialect. MinSpeech provides 2237 hours of unlabeled audio and 1778 hours of labeled audio, sourced diversely and encompassing various contexts. Mandarin text is employed as labels to enable cross-linguistic alignment and transformation. Using this corpus, we have developed baseline systems, including supervised models (Kaldi Chain and Conformer) and two self-supervised models (Wav2vec 2.0 and HuBERT). These systems were assessed on an automatic speech recognition (ASR) task to the Southern Min dialect. Experiments illustrate that the corpus offers practical assistance and resources for speech processing of this dialect. MinSpeech dataset is available at https://minspeech.github.io/.
+	      </span>
               <p>
                 <!-- <p class="item-intro"></p> -->
               </p>
@@ -557,7 +557,7 @@
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase"><p>Guidance</p>
 </h2>
-          <h3 class="section-subheading text-muted">Build your VoxBlink</h3>
+          <h3 class="section-subheading text-muted">Build your MinSpeech</h3>
         </div>
       </div>
       <div class="row">
@@ -578,16 +578,13 @@
           2. The timestamp files are stored in <code>./timestamp</code> folder. To get this, you need to decompress <code>timestamp.tar.gz</code> firstly. An example of timestamp file can be referred in <a href="#p10" class="portfolio-link" data-toggle="modal">timestamp_example</a>.
           <br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          3. Two version of the VoxBlink dataset can be found in <code>./data</code>. The utterances adhere to the following naming rules: <br><code>speaker_id-video_id-utterance_id</code>
+          3. Two version of the MinSpeech dataset can be found in <code>./data</code>. The utterances adhere to the following naming rules: <br><code>speaker_id-video_id-utterance_id</code>
           <br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           4. The video lists to be download are saved in <code>./video_list</code>. We provide three versions:
           <ul style="margin-left: 20pt;">  
             <li>
-              <i>spk2videos_full</i>: Download VoxBlink complete version(38K speakers).
-            </li>
-            <li>
-              <i>spk2videos_clean</i>: Download VoxBlink clean version(18K speakers).
+              <i>spk2videos_full</i>: Download MinSpeech complete version.
             </li>
             <li>
               <i>spk2videos_test</i>: Test if the scripts are runnable(One speakers).
