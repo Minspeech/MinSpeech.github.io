@@ -30,15 +30,12 @@
 
   <!-- Page container change top padding when nav shrinks -->
   
+
 </head>
 
-
-  <body id="page-top">
-
-        <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-	  <a class="navbar-brand js-scroll-trigger" href="#page-top">MinSpeech</a>
+	  <a class="navbar-brand js-scroll-trigger" href="#page-top"style=" color: #ffdd57;">MinSpeech</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -440,7 +437,7 @@
           <h5>
             <a href="#p7" class="portfolio-link" data-toggle="modal">Bibtex</a>&nbsp;|&nbsp;
             <a href="#p8" class="portfolio-link" data-toggle="modal">Abstract</a>&nbsp;|&nbsp;
-            <a href="https://ieeexplore.ieee.org/document/10446780">PDF</a>&nbsp;&nbsp;
+            <a href="链接">PDF</a>&nbsp;&nbsp;
           </h5>
         </div>
       </div>
@@ -568,30 +565,17 @@
       <div class="row">
         <div class="col-lg-12" style="font-size: large;">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          The annotation files and meta-resources can be downloaded through <a href="https://drive.google.com/drive/folders/1tGurSeeWALcBKKmmpKQQq7p4s-1o-Vce"><strong>here</strong></a>. 
-          Apply for the resource and we will soon deal with it. 
+          The annotation files can be downloaded through <a href="https://drive.google.com/drive/folders/1tGurSeeWALcBKKmmpKQQq7p4s-1o-Vce"><strong>here</strong></a>. 
           <br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          1. The information of videos are stored in <code>./video_tags</code> folder.To get this, you need to decompress <code>video_tags.tar.gz</code> firstly. An example of these files can be referred in <a href="#p9" class="portfolio-link" data-toggle="modal">video_tag_example</a>.
+          1. The <code>./label</code> folder contains labeled data, including:
+          The </code>./list</code> folder stores the video list for downloading audio.
+          The </code>./data</code> folder contains the training set, development set, and test set. 
+          Each data set has a corresponding text file and audio file list.
           <br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          2. The timestamp files are stored in <code>./timestamp</code> folder. To get this, you need to decompress <code>timestamp.tar.gz</code> firstly. An example of timestamp file can be referred in <a href="#p10" class="portfolio-link" data-toggle="modal">timestamp_example</a>.
-          <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          3. Two version of the MinSpeech dataset can be found in <code>./data</code>. The utterances adhere to the following naming rules: <br><code>speaker_id-video_id-utterance_id</code>
-          <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          4. The video lists to be download are saved in <code>./video_list</code>. We provide three versions:
-          <ul style="margin-left: 20pt;">  
-            <li>
-              <i>spk2videos_full</i>: Download MinSpeech complete version.
-            </li>
-            <li>
-              <i>spk2videos_test</i>: Test if the scripts are runnable.
-            </li>
-          </ul>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          5. Other meta information(duration, lingual, location, gender) are listed in <code>./meta</code>.
+          2.The </code>./unlabel</code> folder contains unlabeled data, and there is only one list folder, 
+          which is used to save the video list of downloaded audio.
           <br> 
         </div>
       </div>
@@ -606,7 +590,6 @@
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           After you download the annotation files, you can follow the guidance in 
           <a href="https://github.com/VoxBlink/ScriptsForVoxBlink.git"><strong>Repo</strong></a>
-          and build your database with <code>./video_list</code> and <code>./timestamp</code>
         </div>
       </div>
       <br>
@@ -622,10 +605,11 @@
           This means that you can share and adapt the dataset for non-commercial purposes as long as you provide proper attribution 
           and distribute your contributions under the same license.
 
+
           Important: The dataset we release contains only annotated data, including YouTube links and transcription labels. 
           We do not release audio or video data, and it is the responsibility of users to decide whether and how to download video data, 
           and whether their intended purpose of downloading the data is legal in their country.
-          The metadata provided is accurate as of June 2023. We cannot guarantee the availability of videos on the YouTube platform in the future.
+          The metadata provided is accurate as of June 2024. We cannot guarantee the availability of audios on the YouTube platform in the future.
           </div>
       </div>
       
@@ -868,7 +852,7 @@
       <div class="col-lg-12">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        This research is funded in part by the National Natural Science Foundation of China (62171207), Science and Technology Program of Suzhou City(SYC2022051) and MaShang Consumer Finance Co.Ltd. Many thanks for the computational resource provided by the Advanced Computing East China Sub-Center.
+        This work was supported in part by the National Natural Science Foundation of China under Grants 62276220 and 62371407.
       </div>
     </div>
   </div>
@@ -884,7 +868,7 @@
     <div class="row align-items-center">
       <div class="col-md-4">
         <span class="copyright"
-          >Copyright &copy; DKU and MSXF Co.Ltd</span
+          >Copyright &copy; XMU</span
         >
       </div>
       
